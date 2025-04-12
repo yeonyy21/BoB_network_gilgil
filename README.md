@@ -1,5 +1,5 @@
 # BoB_network_gilgil
-13기 3차 교육(공통)에서 '무선 네트워크' 수업의 내용을 담고 있습니다. 
+BoB 13기 3차 교육(공통)에서 '무선 네트워크' 수업의 내용을 담고 있습니다. 
 
 
 Deeply Thanks to Best of the Best, KITRI, gilgil_mentor
