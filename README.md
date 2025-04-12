@@ -66,20 +66,6 @@ https://gitlab.com/gilgil/sns/-/wikis/dot11-frame/report-beacon-flood
         
         이 과정을 분석하면, 인증 과정 중 발생하는 문제(예: 타이밍 오류, 프로토콜 미스매치 등)를 파악할 수 있습니다.
 
-   ```bash
-         [Client (Supplicant)]
-                   │
-  (EAPOL-Start/ EAP-Response)
-                   │
-                   ▼
-         [Authenticator (AP/Switch)]
-                   │
-        (Forwards EAP messages)
-                   │
-                   ▼
-    [Authentication Server (RADIUS)]
-
-```
 
 
 
@@ -170,3 +156,19 @@ https://gitlab.com/gilgil/sns/-/wikis/dot11-frame/report-beacon-flood
         ```
         
         위 명령어는 채널 6에서 모든 클라이언트에 탈인증(로그아웃) 프레임을 전송합니다.
+
+
+ ```bash
+         [Client (Supplicant)]
+                   │
+  (EAPOL-Start/ EAP-Response)
+                   │
+                   ▼
+         [Authenticator (AP/Switch)]
+                   │
+        (Forwards EAP messages)
+                   │
+                   ▼
+    [Authentication Server (RADIUS)]
+
+```
