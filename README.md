@@ -65,7 +65,21 @@ https://gitlab.com/gilgil/sns/-/wikis/dot11-frame/report-beacon-flood
         클라이언트와 서버가 주고받는 메시지로, 올바른 자격 증명이 있는지 확인합니다.
         
         이 과정을 분석하면, 인증 과정 중 발생하는 문제(예: 타이밍 오류, 프로토콜 미스매치 등)를 파악할 수 있습니다.
-        
+
+        ```
+         [Client (Supplicant)]
+                   │
+  (EAPOL-Start/ EAP-Response)
+                   │
+                   ▼
+         [Authenticator (AP/Switch)]
+                   │
+        (Forwards EAP messages)
+                   │
+                   ▼
+    [Authentication Server (RADIUS)]
+
+```
 
 ---
 
